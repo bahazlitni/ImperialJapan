@@ -1,0 +1,43 @@
+.table {
+    overflow-y: scroll;
+    color: var(--color-black);
+    text-align: left;
+}
+
+.table img {
+    width: 100%;
+}
+
+.table div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.table div:last-child {
+    margin-bottom: 0px;
+}
+
+.table h1 {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.table td {
+    padding-top: 10px;
+}
+
+
+.table th {
+    width: 35%;
+    min-width: 115px;
+    max-width: 150px;
+    font-size: 16px;
+    line-height: unset;
+    font-weight: normal;
+    text-transform: capitalize;
+    opacity: .75;
+}

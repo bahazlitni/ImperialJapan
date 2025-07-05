@@ -1,0 +1,46 @@
+.section {
+    gap: 40px;
+    background-color: var(--color-golden-apricot);
+    align-items: center;
+    display: flex;
+}
+
+.section h1 {
+    color: var(--color-black);
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.horizentalLayout {
+    display: block;
+}
+
+.verticalLayout {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .section h1 {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section h1 {
+        color: var(--color-black);
+        font-size: 4.5vw;
+        font-weight: 700;
+    }
+
+    .verticalLayout {
+        display: block;
+    }
+
+    .horizentalLayout {
+        display: none;
+    }
+
+    .section {
+        gap: 80px;
+    }
+}

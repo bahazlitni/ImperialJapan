@@ -1,0 +1,44 @@
+.section {
+    gap: 5vw;
+    background-color: var(--color-sakura);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    flex: 1;
+}
+
+.horizentalLayout {
+    display: block;
+}
+
+.verticalLayout {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .textContainer {
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .verticalLayout {
+        display: block;
+    }
+
+
+    .horizentalLayout {
+        display: none;
+    }
+}

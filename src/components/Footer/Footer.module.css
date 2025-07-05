@@ -1,0 +1,167 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: var(--color-white);
+    font-size: 16px;
+    line-height: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.footer a:hover {
+    opacity: .75;
+}
+
+.body {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    width: 100%;
+    max-width: var(--max-width);
+}
+
+.links {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    row-gap: 5px;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.rightTopButtons {
+    display: flex;
+    column-gap: 1.3vw;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.rightTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.separator {
+    background-color: var(--color-black);
+    opacity: 50%;
+    height: 1px;
+}
+
+.rightBottom {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.rightBottom a {
+    text-decoration: underline;
+    color: var(--color-rich-carmine);
+    cursor: pointer;
+}
+
+.fieldP {
+    opacity: .9;
+}
+
+.valueP {
+    display: flex;
+    gap: 15px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.copyright span {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.logoHorizontal {
+    display: block;
+}
+
+.logoVertical {
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .rightBottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .rightBottom ul {
+        display: flex;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .footer {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .body {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .logoHorizontal {
+        display: none;
+    }
+
+    .logoVertical {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .links {
+        justify-content: center;
+    }
+
+    .rightTop {
+        flex-direction: column;
+    }
+
+    .logoHorizontal {
+        display: block;
+    }
+
+    .logoVertical {
+        display: none;
+    }
+
+    .rightBottom {
+        column-gap: 40px;
+        row-gap: 4px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .rightBottom {
+        align-items: center;
+    }
+
+    .fieldPComplianceLinks {
+        display: none;
+    }
+}
