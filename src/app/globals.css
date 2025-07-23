@@ -25,7 +25,6 @@ body {
 }
 
 
-
 /* reset.css */
 html,
 body,
@@ -267,4 +266,16 @@ footer {
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main {
+  width: 100%;
+  max-width: 1600px;
 }
